@@ -77,7 +77,7 @@ public class JobData {
 
             String aValue = row.get(column);
 
-            if (aValue.contains(value)) {
+            if (aValue.toLowerCase().contains(value)) {
                 jobs.add(row);
             }
         }
@@ -143,7 +143,7 @@ public class JobData {
                 //testing
                 //System.out.println(criteria);
                 //System.out.println(aValue);
-                if (aValue.contains(value) && jobAlreadyEntered == false) {
+                if (aValue.toLowerCase().contains(value) && jobAlreadyEntered == false) {
                     jobs.add(job);
                     jobAlreadyEntered = true;
                 }
