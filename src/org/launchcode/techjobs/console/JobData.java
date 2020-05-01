@@ -14,7 +14,8 @@ import java.util.*;
  */
 public class JobData {
 
-    private static final String DATA_FILE = "C:\\Users\\jerem\\OneDrive\\LaunchCode\\LC101unit2\\javassignments\\one\\resources\\job_data.csv";
+    //private static final String DATA_FILE = "C:\\Users\\jerem\\OneDrive\\LaunchCode\\LC101unit2\\javassignments\\one\\resources\\job_data.csv";
+    private static final String DATA_FILE = "one/resources/job_data.csv";
     private static Boolean isDataLoaded = false;
 
     private static ArrayList<HashMap<String, String>> allJobs;
@@ -48,6 +49,8 @@ public class JobData {
 
         // load data, if not already loaded
         loadData();
+
+        //2nd bonus
         return allJobs;
     }
 
